@@ -1,0 +1,125 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #00FF00;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 28px;
+    color: #00FF00;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.section p {
+    font-size: 18px;
+    color: #B0B0B0;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+/* Image Styles */
+img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+/* Intro Section */
+.intro p {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+/* Conclusion Section */
+.conclusion p {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.conclusion em {
+    color: #00FF00;
+    font-style: italic;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s forwards;
+}
+
+.fade-in.delay-1s {
+    animation: fadeIn 2s 1s forwards;
+}
+
+.fade-in.delay-2s {
+    animation: fadeIn 2s 2s forwards;
+}
+
+.fade-in.delay-3s {
+    animation: fadeIn 2s 3s forwards;
+}
+
+.fade-in.delay-4s {
+    animation: fadeIn 2s 4s forwards;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1a1a1a;
+    color: #B0B0B0;
+    margin-top: 50px;
+}

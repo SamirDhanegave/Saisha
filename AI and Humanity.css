@@ -1,0 +1,109 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    color: #76ff03; /* Green */
+    font-size: 36px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .author {
+    color: #bdbdbd;
+    font-style: italic;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .blog-content {
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .blog-content h2 {
+    color: #76ff03;
+    font-size: 28px;
+    margin-top: 40px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .blog-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .blog-content strong {
+    color: #76ff03;
+  }
+  
+  /* Image Styling */
+  .image-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 28px;
+    }
+  
+    .blog-content p {
+      font-size: 16px;
+    }
+  
+    .image-container img {
+      width: 90%;
+    }
+  }
+  
